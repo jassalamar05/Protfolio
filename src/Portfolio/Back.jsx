@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
 export default function Background() {
-const canvas = document.getElementById("bg");
+    const canvas = document.getElementById("bg");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -37,7 +37,7 @@ function animate() {
       let dist = Math.sqrt(dx * dx + dy * dy);
 
       if (dist < 150) {
-        ctx.strokeStyle = "rgba(150,150,150,0.3)";
+        ctx.strokeStyle = "rgba(150,150,250,0.3)";
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
         ctx.lineTo(particles[j].x, particles[j].y);
@@ -51,21 +51,22 @@ function animate() {
 
 animate();
 
-  const particlesInit = async (engine) => {
+ const particlesInit = async (engine) => {
     await loadSlim(engine);
   };
+
 
   return (
     <Particles
       init={particlesInit}
       options={{
-        fullScreen: { enable: true },
+        fullScreen: { enable: true},
         particles: {
           number: { value: 60 },
-          color: { value: "#999999" },
+          color: { value: "#7C3AED" }, // violet-600
           links: {
             enable: true,
-            color: "#cccccc",
+            color: "#6D28D9",
             distance: 150,
             opacity: 0.4,
           },
