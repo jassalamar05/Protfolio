@@ -15,13 +15,14 @@ export default function Home(){
                 </div>
             </div>
 
-            <div>
-  
-  
-    
-                
-                 
+            <div className="flex items-center justify-center pt-10 gap-5">
+            <div className="hover:bg-violet-300 bg-slate-300 rounded-full h-10 w-10 flex items-center justify-center"><i className="fa-brands fa-twitter text-2xl"></i></div>
+            <div className="hover:bg-violet-300 bg-slate-300 rounded-full h-10 w-10 flex items-center justify-center"><i className="fa-brands fa-github text-2xl"></i></div>
+            <div className="hover:bg-violet-300 bg-slate-300 rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-brands fa-linkedin-in text-2xl"></i></div>
+            <div className="hover:bg-violet-300 bg-slate-300 rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-brands fa-facebook-f text-2xl"></i></div>
+            <div className="hover:bg-violet-300 bg-slate-300 rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-brands fa-dev text-2xl"></i></div>
             </div>
+            
         </section>
         
         </>
