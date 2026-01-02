@@ -1,45 +1,61 @@
+import { useState } from "react"
+
 export default function Port(){
+    const[setopen,isSetOpen]=useState(false)
+    const handleSubmit=()=>{
+       isSetOpen(!setopen)
+    }
     return(
         <>
         {/* navbar */}
         <section>
             {/* navbar par inset lagana taki sara background over a jaye parent ke  */}
+ {setopen&& (
     <nav className="fixed inset-0 bg-white lg:hidden">  
-         <div className="flex items-center justify-between px-12 py-5">
-            <div className="flex items-center justify-center gap-5">
+    <div className="flex justify-between relative px-2 py-4 gap-2">
+{/* MENU ICON */}
+<div className="flex items-center justify-center gap-2">
+  {/* DROPDOWN MENU */}
+            <button onClick={handleSubmit}>
+            <i className="fa-solid fa-bars-staggered sm:text-2xl cursor-pointer"></i>
+            </button>
 
-                
-            {/* MENU ICON */}
-            <div className="relative group">
-            <i className="fa-solid fa-bars-staggered text-2xl cursor-pointer"></i>
-            {/* DROPDOWN MENU */}
-            <ul className="lg:absolute bg-white shadow-xl  rounded hidden  group-hover:block pt-5 fixed  left-0 w-full px-12">
-                <li className="px-4 py-3 bg-violet-700 text-white font-bold rounded-t">Home</li>
-                <li className="px-4 py-3 hover:bg-slate-200 hover:text-violet-700 font-bold">About</li>
-                <li className="px-4 py-3 hover:bg-slate-200 hover:text-violet-700 font-bold">Process</li>
-                <li className="px-4 py-3 hover:bg-slate-200 hover:text-violet-700 font-bold">Portfolio</li>
-                <li className="px-4 py-3 hover:bg-slate-200 hover:text-violet-700 font-bold">Blog</li>
-                <li className="px-4 py-3 hover:bg-slate-200 hover:text-violet-700 font-bold rounded-b">Services</li>
-            </ul>
-            </div>
 
             {/* LOGO + NAME */}
-           
+            <div className="flex items-center gap-1">
             <div className="bg-purple-700 h-8 w-8 rounded-full flex items-center justify-center text-white text-xl font-bold"> A</div>
             <span className="font-semibold text-sm md:text-lg"> AMARDEEP SINGH</span>
             </div>
+</div>
 
             {/* CONTACT BUTTON */}
-            <div className="flex items-center">
-            <button className="bg-violet-700 text-white px-4 py-2 z-10 rounded font-bold hover:scale-105 transition">Contact </button>
+        <div className="flex items-center">
+            <button className="bg-violet-700 text-white px-3 py-1 rounded font-bold hover:scale-105 transition">Contact </button>
             </div>
         </div>
+
+        <div>
+            <ul>
+            <li className="px-4 py-2 bg-violet-700 text-white font-bold rounded-t">Home</li>
+            <li className="px-4 py-2 hover:bg-slate-200 hover:text-violet-700 font-bold">About</li>
+            <li className="px-4 py-2 hover:bg-slate-200 hover:text-violet-700 font-bold">Process</li>
+            <li className="px-4 py-2 hover:bg-slate-200 hover:text-violet-700 font-bold">Portfolio</li>
+            <li className="px-4 py-2 hover:bg-slate-200 hover:text-violet-700 font-bold">Blog</li>
+            <li className="px-4 py-2 hover:bg-slate-200 hover:text-violet-700 font-bold rounded-b">Services</li>
+            </ul>
+        </div>
 </nav>
+)}
 
 
             {/* navbar */}
-            <nav className="bg-white flex justify-between px-10 pt-5">
+            <nav className="bg-white flex justify-between px-5 pt-5">
                 <div className="flex gap-2 md:gap-1">
+                <div className="block lg:hidden cursor-pointer">
+                    <button onClick={handleSubmit}>
+                  <i className="fa-solid fa-bars-staggered sm:text-3xl text-xl"></i>
+                    </button>
+                </div>
                 <div className="bg-purple-700 rounded-[100%] px-3 py-1 md:px-6 md:py-4 flex items-center text-white justify-center text-2xl font-bold ">A</div>
                 <div className="flex items-center text-sm font-semibold  md:text-xl lg:text-2xl">AMARDEEP SINGH</div>
                 </div>
@@ -57,14 +73,6 @@ export default function Port(){
                 </div>
 
             </nav>
-        </section>
-
-
-
-        <section>
-            <div className="">
-
-            </div>
         </section>
         </>
     )
