@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import img from "../assets/Img/unnamed.jpg"
 
 export default function Home(){
- const text = "I Am Into Android Development";
+
     return(
         <>
         <section>
@@ -11,7 +11,7 @@ export default function Home(){
                 </div>
 
                 <div className="col-span-1 pt-10 flex justify-center group">
-                    <img src="src/assets/Img/unnamed.jpg" className=" lg:h-96 lg:w-60 h-52 w-52  border-2 border-black shadow-2xl hover:animate-pulse transition-transform duration-1000 rounded-full" alt="" />
+                    <img src={img} className=" lg:h-96 lg:w-60 h-52 w-52  border-2 border-black shadow-2xl hover:animate-pulse transition-transform duration-1000 rounded-full" alt="" />
                 </div>
             </div>
 
