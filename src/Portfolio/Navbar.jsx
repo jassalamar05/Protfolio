@@ -14,7 +14,7 @@ export default function Nav(){
   <nav className="fixed inset-0 z-50 bg-white lg:hidden">
     
     {/* TOP BAR */}
-    <div className="flex justify-between items-center px-6 py-4 border-b">
+    <div className="flex justify-between items-center px-6 py-4">
       
       {/* LEFT */}
       <div className="flex items-center gap-3">
@@ -23,21 +23,21 @@ export default function Nav(){
         </button>
 
         <div className="flex items-center gap-2">
-          <div className="bg-purple-700 h-8 w-8 rounded-full flex items-center justify-center text-white font-bold">
+          <div className="bg-purple-700 h-8 w-12 rounded-full flex items-center justify-center text-white font-bold">
             A
           </div>
-          <span className="font-semibold">AMARDEEP SINGH</span>
+          <span className="font-semibold text-sm">AMARDEEP SINGH</span>
         </div>
       </div>
 
       {/* RIGHT */}
-      <button className="bg-violet-700 text-white px-4 py-1 rounded font-bold">
+      <button className="bg-violet-700 text-white px-3 py-1 rounded font-bold">
         Contact
       </button>
     </div>
 
     {/* MENU LIST */}
-    <ul className="mt-6 px-6">
+    <ul className="mt-6 px-1 sm:px-6">
       <li className="px-4 py-3 bg-violet-700 text-white font-bold rounded">
         Home
       </li>
@@ -63,14 +63,14 @@ export default function Nav(){
 )}
 
             {/* navbar */}
-            <nav className="bg-white flex justify-between px-10 pt-5">
+            <nav className="bg-white flex justify-between px-1 sm:px-5 md:px-7 pt-5">
                 <div className="flex gap-2 md:gap-1">
-                <div className="block lg:hidden cursor-pointer">
+                <div className="flex lg:hidden cursor-pointer">
                     <button onClick={handleSubmit}>
-                  <i className="fa-solid fa-bars-staggered sm:text-3xl text-xl"></i>
+                  <i className="fa-solid fa-bars-staggered sm:text-2xl text-xl"></i>
                     </button>
                 </div>
-                <div className="bg-purple-700 rounded-[100%] px-3 py-1 md:px-6 md:py-4 flex items-center text-white justify-center text-2xl font-bold ">A</div>
+                <div className="bg-purple-700 rounded-[100%] px-3 py-1 md:px-4 md:py-2 flex items-center text-white justify-center text-2xl font-bold ">A</div>
                 <div className="flex items-center text-sm font-semibold  md:text-xl lg:text-2xl">AMARDEEP SINGH</div>
                 </div>
 
@@ -82,7 +82,7 @@ export default function Nav(){
                         <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Skills</li>
                         <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Builds</li>
                     </ul>
-                    <li className=" bg-violet-700 hover:scale-105 transition-transform duration-700  text-white px-2 py-2  rounded flex items-center justify-center font-bold md:px-5 md:py-4">Contact</li>
+                    <li className=" bg-violet-700 hover:scale-105 transition-transform duration-700  text-white px-1 py-1  rounded flex items-center justify-center font-bold md:px-5 md:py-4">Contact</li>
                 </div>
 
             </nav>

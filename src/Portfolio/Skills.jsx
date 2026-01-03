@@ -42,7 +42,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-gray-300 via-violet-400 to-violet-800 py-16 px-6">
+    <section className="w-full bg-gradient-to-r from-gray-300 via-violet-400 to-violet-400 py-16 px-6">
       
       {/* Heading */}
       <h2 className="text-center text-4xl font-bold text-white mb-14 flex justify-center items-center gap-3">

@@ -30,13 +30,13 @@ export default function Footer() {
         </p>
       </div>
 
-
-      {/* Scroll to Top Button */}
-      <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+{/* 
+      Scroll to Top Button  */}
+     {/* <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="absolute right-6 bottom-6 h-12 w-12 rounded-full bg-purple-600 flex items-center justify-center hover:bg-purple-700 transition"
       >
         <ArrowUp size={24} />
-      </button>
+      </button> */}
     </footer>
   );
 }
