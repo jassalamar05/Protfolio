@@ -1,17 +1,37 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Port from './Portfolio/Port'
-import Background from './Portfolio/Back'
-import Home from './Portfolio/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Nav from './Portfolio/Navbar'
+import Backs from './Portfolio/Backs'
+import About from './Portfolio/About'
+import Footer from './Portfolio/Footer'
+import WorkProcess from './Portfolio/Process'
+import Services from './Portfolio/Skills'
+
 
 function App() {
   return (
     <>
-    <Port/>
-   <Background/>
-    <Home/>
+    <Nav/>
+    <Backs/>
+    <About/>
+    <WorkProcess/>
+    <Services/>
+    <Footer/>
+
+{/*    
+    <BrowserRouter>
+    <Routes>
+
+        <Route path="/" element={<Nav />}>
+          <Route index element={<Homes />} />
+          <Route path="backs" element={<Backs />} />
+          <Route path="about" element={<About />} />
+          </Route>
+
+    </Routes>
+    </BrowserRouter> */}
     </>
 
   )
