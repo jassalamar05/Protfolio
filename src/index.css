@@ -15,7 +15,7 @@
 .glow-box::after {
   content: "";
   position: absolute; /* ✅ MUST */
-  inset: -3px;        /* ✅ border thickness #6300c6 */
+  inset: -2px;        /* ✅ border thickness #6300c6 */
   background: conic-gradient(
     from var(--deg) at center,
     #4d4d4d,
@@ -30,7 +30,7 @@
 
 /* 🔹 Blur glow */
 .glow-box::after {
-  filter: blur(20px);
+  filter: blur(15px);
 }
 
 /* 🔹 Animation */

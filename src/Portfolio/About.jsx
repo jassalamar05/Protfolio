@@ -27,7 +27,7 @@ export default function About(){
     <img
       src={img}
       alt="profile"
-      className="w-[320px]  lg:w-[360px]  lg:h-[370px]   rounded-[50px]  object-cover  bg-[#142d4a] relative z-10 " />
+      className="w-[320px] border-2 lg:w-[360px]  lg:h-[370px] rounded-[50px]  object-cover  bg-[#142d4a] relative z-10 " />
   </div>
 </div>
 
