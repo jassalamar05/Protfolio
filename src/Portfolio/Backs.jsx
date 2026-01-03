@@ -18,11 +18,14 @@ export default function Backs() {
                       <div className="lg:col-span-1 pt-6">
                            <p className="text-sm lg:text-4xl font-bold lg:pt-40 text-center sm:text-xl lg:text-justify"> <span className="text-purple-700">Hi There,</span> <br /><span className=""> I'm </span><span className="text-violet-700"> Amardeep Singh </span> <br /><span className="">I Am Into Full Stack Development</span></p>   
                       </div>
-      
-                      <div className="col-span-1 pt-10 flex justify-center">
-                          <img src={img} className=" lg:h-96 lg:w-96 h-52 w-52 sm:h-60 sm:w-60  border-2 rounded-full border-black shadow-2xl    hover:scale-105" alt="" />
-                      </div>
-                  </div>
+
+        <div className="flex justify-center px-1 lg:pt-10 pt-20">
+        <div className="relative glow-box rounded-[100%]">
+          <img src={img} alt="profile"
+            className="w-52 h-52 lg:w-96 transition-transform duration-1000 hover:animate-pulse lg:h-96 rounded-[100%] bg-[#142d4a] relative z-10 hover:scale-105" />
+              </div>
+            </div>
+          </div>
       </section>
       
      

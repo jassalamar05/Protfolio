@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* 🔹 Register animated CSS variable */
+@property --deg {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+/* 🔹 Glow border */
+.glow-box::before,
+.glow-box::after {
+  content: "";
+  position: absolute; /* ✅ MUST */
+  inset: -3px;        /* ✅ border thickness #6300c6 */
+  background: conic-gradient(
+    from var(--deg) at center,
+    #4d4d4d,
+    #4d0199,
+    #b6acc0,
+    #4d4d4d
+  );
+  border-radius: inherit;
+  z-index:0;         /* ✅ behind image */
+  animation: rotateGradient 2s linear infinite;
+}
+
+/* 🔹 Blur glow */
+.glow-box::after {
+  filter: blur(20px);
+}
+
+/* 🔹 Animation */
+@keyframes rotateGradient {
+  to {
+    --deg: 360deg;
+  }
+}

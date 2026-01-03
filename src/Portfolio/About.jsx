@@ -3,7 +3,7 @@ import img from "../assets/Img/Amar.jpeg";
 export default function About(){
     return(
         <>
-        <section className="bg-white h-fit">
+        <section className="bg-white h-fit" id="about">
              <div className="flex items-center justify-center lg:pt-10 gap-1">
                   <div className="hover:bg-violet-300 bg-slate-300 rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center"><i className="fa-brands fa-twitter lg:text-2xl text-xl"></i></div>
                   <div className="hover:bg-violet-300 bg-slate-300 rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center"><i className="fa-brands fa-github lg:text-2xl text-xl"></i></div>
@@ -22,12 +22,14 @@ export default function About(){
 
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-10 items-center">
         {/* LEFT IMAGE CARD */}
-        <div className="flex justify-center px-1">
-          <div className="relative">
-            <img src={img} alt="profile"
-              className=" w-[320px] lg:w-[360px] rounded-2xl shadow-2xl object-contain transition-transform duration-1000  border-[3px] border-r-8 border-gray-800 hover:animate-bounce hover:border-violet-700"/>
-          </div>
-        </div>
+      <div className="flex justify-center px-1">
+  <div className="relative glow-box rounded-[50px]">
+    <img
+      src={img}
+      alt="profile"
+      className="w-[320px]  lg:w-[360px]  lg:h-[370px]  aspect-square  rounded-[50px]  object-cover  bg-[#142d4a] relative z-10 " />
+  </div>
+</div>
 
         {/* RIGHT CONTENT */}
         <div className="px-5 sm:px-10">

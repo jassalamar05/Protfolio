@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 export default function Nav(){
     const[isOpen,isSetOpen]=useState(false)
     const handleSubmit=()=>{
@@ -74,13 +75,13 @@ export default function Nav(){
                 <div className="flex items-center text-sm font-semibold  md:text-xl lg:text-2xl">AMARDEEP SINGH</div>
                 </div>
 
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center items-center gap-3 scroll-smooth">
                     <ul className=" hidden  gap- cursor-pointer gap-8 sm:hidden md:hidden lg:flex">
-                        <li className="bg-violet-700  text-white rounded py-3 px-4 flex items-center justify-center font-bold">Home</li>
-                        <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">About</li>
-                        <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded  flex items-center justify-center font-bold">Process</li>
-                        <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Skills</li>
-                        <li className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Builds</li>
+                        <li><a href="#home" className="bg-violet-700  text-white rounded py-3 px-4 flex items-center justify-center font-bold">Home</a></li>
+                        <li><a href="#about" className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">About</a></li>
+                        <li><a href="#process" className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Process</a></li>
+                        <li><a href="#skills" className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Skills</a></li>
+                        <li><a href="#Builds" className=" hover:text-violet-700 hover:bg-slate-200 px-4 py-3  rounded flex items-center justify-center font-bold">Builds</a></li>
                     </ul>
                     <li className=" bg-violet-700 hover:scale-105 transition-transform duration-700  text-white px-1 py-1  rounded flex items-center justify-center font-bold md:px-5 md:py-4">Contact</li>
                 </div>
