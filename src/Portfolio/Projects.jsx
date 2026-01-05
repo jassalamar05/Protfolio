@@ -27,7 +27,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className=" min-h-screen py-16 px-6">
+    <section className=" min-h-screen py-16 px-6" id="builds">
       <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
         {projects.map((project, index) => (

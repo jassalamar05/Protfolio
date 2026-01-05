@@ -16,9 +16,12 @@ import {
   SiPostman,
   SiNextdotjs,
   SiDocker,
-  SiKubernetes,
   SiJenkins,
 } from "react-icons/si";
+
+import {
+  FaLinux,
+} from "react-icons/fa";
 
 export default function Skills() {
   const skills = [
@@ -37,7 +40,7 @@ export default function Skills() {
     { name: "Postman", icon: <SiPostman /> },
     { name: "Next.js", icon: <SiNextdotjs /> },
     { name: "Docker", icon: <SiDocker  /> },
-    { name: "Kubernetes", icon: <SiKubernetes  /> },
+    { name: "Linux", icon: <FaLinux /> },
     { name: "Jenkins", icon: <SiJenkins /> },
   ];
 
