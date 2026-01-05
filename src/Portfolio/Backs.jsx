@@ -27,8 +27,6 @@ export default function Backs() {
             </div>
           </div>
       </section>
-      
-     
 
       <Particles
         init={particlesInit}

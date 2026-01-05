@@ -2,7 +2,7 @@ import { NotebookPen, BarChart3, Pencil, Rocket } from "lucide-react";
 
 export default function WorkProcess() {
   return (
-    <section className=" bg-gray-100 py-5 px-6 lg:mt-10 mt-10" id="process">
+    <section className="  py-5 px-6 lg:mt-10 mt-10" id="process">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* LEFT CONTENT */}

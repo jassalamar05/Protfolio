@@ -8,6 +8,8 @@ import About from './Portfolio/About'
 import Footer from './Portfolio/Footer'
 import WorkProcess from './Portfolio/Process'
 import Services from './Portfolio/Skills'
+import Projects from './Portfolio/Projects'
+import ChatBox from './Portfolio/Chat'
 
 
 
@@ -18,7 +20,9 @@ function App() {
     <Backs/>
     <About/>
     <WorkProcess/>
+    <ChatBox/>
     <Services/>
+    <Projects/>
     <Footer/>
 {/*    
     <BrowserRouter>
