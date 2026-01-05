@@ -52,7 +52,7 @@ export default function Footer() {
 
       {/* ✅ Button OUTSIDE footer */}
           {/* Button */}
-      <div className={`fixed right-6 z-50 transition-all duration-500 ease-out
+      <div className={`fixed right-6 z-50 transition-all duration-1000 ease-out
           ${
             show ? "top-[91%] opacity-100 translate-y-0"
               : "top-0 opacity-0 -translate-y-10 pointer-events-none"
