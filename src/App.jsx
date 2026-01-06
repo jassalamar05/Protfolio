@@ -10,12 +10,18 @@ import WorkProcess from './Portfolio/Process'
 import Services from './Portfolio/Skills'
 import Projects from './Portfolio/Projects'
 import ChatBox from './Portfolio/Chat'
+import Thread from './Portfolio/Thread'
+import Lines from './assets/Lines'
 
 
 
 function App() {
   return (
     <>
+    {/* <Lines/> */}
+    {/* <Thread/> */}
+
+
     <Nav/>
     <Backs/>
     <About/>
@@ -23,7 +29,7 @@ function App() {
     <ChatBox/>
     <Services/>
     <Projects/>
-    <Footer/>
+    <Footer/> 
 {/*    
     <BrowserRouter>
     <Routes>

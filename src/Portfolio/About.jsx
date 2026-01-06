@@ -1,6 +1,13 @@
 import img from "../assets/Img/Amar.jpeg";
 
+
 export default function About(){
+const handleSubmit = () => {
+  window.open("/src/assets/Img/DOC-20250812-WA0030..pdf");
+};
+
+
+  
     return(
         <>
         <section className="bg-white h-fit" id="about">
@@ -56,11 +63,12 @@ export default function About(){
 
           {/* Resume Button */}
           <div className="flex items-center justify-center">
-          <button
+          <button onClick={handleSubmit}
             className=" mt-6 inline-flex items-center gap-2 bg-violet-700 text-white px-8 py-3 rounded-lg font-semibold  shadow-lg  hover:bg-violet-800  transition-all ">
             Resume
-            <span className="text-xl">›</span>
+            <span className="text-xl">›</span> 
           </button>
+          
           </div>
         </div>
       </div>
