@@ -1,10 +1,9 @@
 import img from "../assets/Img/Amar.jpeg";
 
 
+
 export default function About(){
-const handleSubmit = () => {
-  window.open("/src/assets/Img/DOC-20250812-WA0030..pdf");
-};
+
 
 
   
@@ -63,7 +62,7 @@ const handleSubmit = () => {
 
           {/* Resume Button */}
           <div className="flex items-center justify-center">
-          <button onClick={handleSubmit}
+          <button onClick={() => window.open("DOC-20250812-WA0030..pdf", "_blank")}
             className=" mt-6 inline-flex items-center gap-2 bg-violet-700 text-white px-8 py-3 rounded-lg font-semibold  shadow-lg  hover:bg-violet-800  transition-all ">
             Resume
             <span className="text-xl">›</span> 
