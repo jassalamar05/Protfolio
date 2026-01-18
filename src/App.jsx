@@ -10,8 +10,10 @@ import WorkProcess from './Portfolio/Process'
 import Services from './Portfolio/Skills'
 import Projects from './Portfolio/Projects'
 import ChatBox from './Portfolio/Chat'
-import Thread from './Portfolio/Thread'
-import Lines from './assets/Lines'
+import Nfixed from './Portfolio/NFIXED'
+import Proj from './Portfolio/Cards'
+
+
 
 
 
@@ -20,7 +22,7 @@ function App() {
     <>
     {/* <Lines/> */}
     {/* <Thread/> */}
-
+    {/* <Proj/> */}
 
     <Nav/>
     <Backs/>

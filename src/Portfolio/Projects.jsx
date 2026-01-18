@@ -1,57 +1,66 @@
+
+
 const projects = [
   {
     title: "Project 1",
-    image: "/images/insta.png",
+    image: "src/assets/Img/engg.jpeg",
+    link:  "https://engghub.onrender.com",
+    link1:"https://github.com/jassalamar05/Protfolio"
   },
-  {
-    title: "Project 2",
-    image: "/images/dashboard.png",
+    {
+    title: "Project 1",
+    image: "src/assets/Img/engg.jpeg",
+    link:  "https://engghub.onrender.com",
+    link1:"https://github.com/jassalamar05/Protfolio"
   },
-  {
-    title: "Project 3",
-    image: "/images/resume.png",
+    {
+    title: "Project 1",
+    image: "src/assets/Img/engg.jpeg",
+    link:  "https://engghub.onrender.com",
+    link1:"https://github.com/jassalamar05/Protfolio"
   },
-  {
-    title: "Project 4",
-    image: "/images/react.png",
-  },
-  {
-    title: "Project 5",
-    image: "/images/flipkart.png",
-  },
-  {
-    title: "Project 6",
-    image: "/images/js.png",
-  },
+    {
+    title: "Project 1",
+    image: "src/assets/Img/engg.jpeg",
+    link:  "https://engghub.onrender.com",
+    link1:"https://github.com/jassalamar05/Protfolio"
+  }
 ];
 
 export default function Projects() {
   return (
-    <section className=" min-h-screen py-16 px-6" id="builds">
-      <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="grid grid-cols-1 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 py-10 px-10 lg:px-20 lg:py-20">
+      {projects.map((projects,index)=>(
+        <div className="relative group overflow-hidden  rounded-lg py-2 lg:py-10 lg:px-2">
 
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className=" rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
-          >
-            {/* Image */}
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-56 object-cover"
-            />
+        <img
+          src={projects.image}
+          className="h-60 w-full object-cover "
+        />
 
-            {/* Yellow Title Bar */}
-            <div className="bg-violet-400 py-3 px-4">
-              <h3 className="text-black font-bold text-lg">
-                {project.title}
-              </h3>
-            </div>
-          </div>
-        ))}
+        {/* Overlay (starts from bottom) */}
+        <div className=" absolute inset-0 
+            translate-y-72 group-hover:translate-y-10 lg:group-hover:translate-y-24
+            transition-all duration-500 ease-linear bg-violet-400 hover:px-5">
+        <div>
+         <p className=" w-full h-10 bg-gray-400 text-violet-700 font-bold flex items-center justify-center text-xl">ENGINEERING HUB</p>
+        </div>
 
-      </div>
+        <div>
+        <p className="text-black z-10">
+        Full-Stack Enginnering hub built using MERN stack and realtime chat with the help of socket.iO
+        </p>
+        </div>
+
+        <div className="flex justify-between items-center py-10">
+           <a href={projects.link}> <button className="bg-violet-500 hover:bg-violet-300 text-black h-10 w-20">View</button></a>  
+          <a href={projects.link1}> <button className="bg-violet-500 hover:bg-violet-300 text-black h-10 w-20">Code</button></a> 
+        </div>
+    </div>
+ </div>
+
+      ))}
+
     </section>
   );
 }
