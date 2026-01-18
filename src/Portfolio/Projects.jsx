@@ -1,4 +1,4 @@
-import img from "../assets/Img/engg.jpeg"
+import img from "/public/engg.jpeg"
 
 const projects = [
   {
