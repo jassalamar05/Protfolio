@@ -1,27 +1,27 @@
-
+import img from "../assets/Img/engg.jpeg"
 
 const projects = [
   {
     title: "Project 1",
-    image: "src/assets/Img/engg.jpeg",
+    image: img,
     link:  "https://engghub.onrender.com",
     link1:"https://github.com/jassalamar05/Protfolio"
   },
     {
     title: "Project 1",
-    image: "src/assets/Img/engg.jpeg",
+    image: img,
     link:  "https://engghub.onrender.com",
     link1:"https://github.com/jassalamar05/Protfolio"
   },
     {
     title: "Project 1",
-    image: "src/assets/Img/engg.jpeg",
+    image: img,
     link:  "https://engghub.onrender.com",
     link1:"https://github.com/jassalamar05/Protfolio"
   },
     {
     title: "Project 1",
-    image: "src/assets/Img/engg.jpeg",
+    image: img,
     link:  "https://engghub.onrender.com",
     link1:"https://github.com/jassalamar05/Protfolio"
   }
@@ -31,7 +31,7 @@ export default function Projects() {
   return (
       <section className="grid grid-cols-1 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 py-10 px-10 lg:px-20 lg:py-20">
       {projects.map((projects,index)=>(
-        <div className="relative group overflow-hidden  rounded-lg py-2 lg:py-10 lg:px-2">
+        <div className="relative group overflow-hidden  rounded-lg py-2 lg:py-10 lg:px-2" key={index}>
 
         <img
           src={projects.image}
