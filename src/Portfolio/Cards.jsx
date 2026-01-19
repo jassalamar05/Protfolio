@@ -12,7 +12,7 @@ export default function Projects() {
         {/* Overlay (starts from bottom) */}
         <div className=" absolute inset-0
             translate-y-full group-hover:translate-y-10
-            transition-all duration-500 ease-linear bg-violet-400 hover:px-5 px-10">
+            transition-all duration-500 ease-linear bg-violet-500 hover:px-5 px-10">
         <div>
          <p className=" w-full h-10 bg-gray-400 text-violet-700 font-bold flex items-center justify-center text-xl">ENGINEERING HUB</p>
         </div>

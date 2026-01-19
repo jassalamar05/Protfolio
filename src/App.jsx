@@ -12,6 +12,7 @@ import Projects from './Portfolio/Projects'
 import ChatBox from './Portfolio/Chat'
 import Nfixed from './Portfolio/NFIXED'
 import Proj from './Portfolio/Cards'
+import Contact from './Portfolio/Contact'
 
 
 
@@ -24,6 +25,8 @@ function App() {
     {/* <Thread/> */}
     {/* <Proj/> */}
 
+ 
+
     <Nav/>
     <Backs/>
     <About/>
@@ -31,6 +34,7 @@ function App() {
     <ChatBox/>
     <Services/>
     <Projects/>
+    <Contact/>
     <Footer/> 
 {/*    
     <BrowserRouter>

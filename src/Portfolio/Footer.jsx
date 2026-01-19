@@ -22,7 +22,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-[#2c3e55] text-white">
+      <footer className="bg-[#2c3e55] text-white pt-4 mt-4">
         <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col lg:flex-row items-center justify-between gap-6">
           
           <div className="flex items-center gap-3">
@@ -34,13 +34,12 @@ export default function Footer() {
 
         <div className="scroll-smooth">
           <ul className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-            <li> <a href="" id="#home" className="cursor-pointer">Home</a></li>
-            <li> <a href="" id="#about" className="cursor-pointer">About</a></li>
-            <li>Process</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li> <a href="#home" id="" className="cursor-pointer">Home</a></li>
+            <li> <a href="#about" id="" className="cursor-pointer">About</a></li>
+            <li><a href="#process" id="" className="cursor-pointer">Process</a></li>
+             <li><a href="#skills" id="" className="cursor-pointer">Skills</a></li>
+            <li><a href="#Builds" id="" className="cursor-pointer">Builds</a></li>
+           
           </ul>
         </div>
 
@@ -60,7 +59,7 @@ export default function Footer() {
         `}
       >
         <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => window.scrollTo({ top: 20, behavior: "smooth" })}
           className="bg-violet-600 hover:bg-violet-500 text-white p-4 rounded-full shadow-lg"
         >
           {open ? <X size={24} /> :  <ArrowUp size={24} />}
