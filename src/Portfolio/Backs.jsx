@@ -1,6 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import img from "../assets/Img/bitomji.png"
+import img from "../assets/Img/unnamed.jpg"
 
 export default function Backs() {
 
@@ -16,7 +16,7 @@ export default function Backs() {
         <section>
                   <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-20 px-2">
                       <div className="lg:col-span-1 pt-6">
-                           <p className="text-sm lg:text-4xl font-bold lg:pt-40 text-center sm:text-xl lg:text-justify"> <span className="text-purple-700">Hi There,</span> <br /><span className=""> I'm </span><span className="text-violet-700"> Diya Sharma </span> <br /><span className="">I Am Into Full Stack Development</span></p>   
+                           <p className="text-sm lg:text-4xl font-bold lg:pt-40 text-center sm:text-xl lg:text-justify"> <span className="text-purple-700">Hi There,</span> <br /><span className=""> I'm </span><span className="text-violet-700"> Amardeep Singh </span> <br /><span className="">I Am Into Full Stack Development</span></p>   
                       </div>
 
         <div className="flex justify-center px-1 lg:pt-10 pt-20">

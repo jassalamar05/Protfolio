@@ -66,8 +66,8 @@ export default function Nav(){
                   <i className="fa-solid fa-bars-staggered sm:text-2xl text-xl"></i>
                     </button>
                 </div>
-                <div className="bg-purple-700 rounded-[100%] px-3 py-1 md:px-4 md:py-2 flex items-center text-white justify-center text-2xl font-bold ">DS</div>
-                <div className="flex items-center text-sm font-semibold  md:text-xl lg:text-2xl">PORTFOLIO</div>
+                <div className="bg-purple-700 rounded-[100%] px-3 py-1 md:px-4 md:py-2 flex items-center text-white justify-center text-2xl font-bold ">A</div>
+                <div className="flex items-center text-sm font-semibold  md:text-xl lg:text-2xl">Amardeep Singh</div>
                 </div>
 
                 <div className="flex justify-center items-center gap-5 scroll-smooth">

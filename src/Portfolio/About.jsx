@@ -1,4 +1,4 @@
-import img from "../assets/Img/diya.png";
+import img from "../assets/Img/Amar.jpeg";
 
 
 
@@ -49,7 +49,7 @@ export default function About(){
 
           <div className="flex items-center justify-center pt-5 lg:block">
           <p className="text-violet-700 text-sm">
-            Email : <span className="text-gray-900">sdiya0523@gmail.com</span>
+            Email : <span className="text-gray-900">amardeepsingh786786@gmail.com</span>
           </p>
             </div>
 
@@ -62,7 +62,7 @@ export default function About(){
 
           {/* Resume Button */}
           <div className="flex items-center justify-center">
-          <button onClick={() => window.open("Diya_Sharma_web developer.pdf", "_blank")}
+          <button onClick={() => window.open("Amardeep_web developer.pdf", "_blank")}
             className=" mt-6 inline-flex items-center gap-2 bg-violet-700 text-white px-8 py-3 rounded-lg font-semibold  shadow-lg  hover:bg-violet-800  transition-all ">
             Resume
             <span className="text-xl">›</span> 
