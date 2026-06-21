@@ -7,10 +7,12 @@ import {
   FaJs,
   FaAws,
 } from "react-icons/fa";
+import { SiAstro } from "react-icons/si";
 
 import {
   SiExpress,
   SiTailwindcss,
+    SiAstro,
   SiMongodb,
   SiTypescript,
   SiPostman,
@@ -36,6 +38,7 @@ export default function Skills() {
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "AWS", icon: <FaAws /> },
     { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "AstroJS", icon: <SiAstro /> },
     { name: "Postman", icon: <SiPostman /> },
     { name: "Next.js", icon: <SiNextdotjs /> },
     { name: "Docker", icon: <SiDocker  /> },
