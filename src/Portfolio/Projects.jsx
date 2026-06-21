@@ -30,7 +30,7 @@ const projects = [
     title: "PG Booking System",
     image: img5,
     description: "Full stack PG booking platform with login, rooms, categories and admin dashboard.",
-    link: "http://3.109.143.162:5000/",
+    link: "http://13.203.75.40:5004/",
     codelink: "https://github.com/Diya52003sharma/pgprjct"
   },
   {
