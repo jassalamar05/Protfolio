@@ -7,7 +7,7 @@ import {
   FaJs,
   FaAws,
 } from "react-icons/fa";
-import { SiAstro } from "react-icons/si";
+
 
 import {
   SiExpress,
